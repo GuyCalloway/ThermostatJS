@@ -14,7 +14,7 @@ describe('Thermostat', function() {
     });
 
     it("has power-saving mode on by default", () => {
-        expect(thermostat.powersaving).toBe(true);
+        expect(thermostat._powersaving).toBe(true);
     });  
   });
 
@@ -33,7 +33,7 @@ describe('Thermostat', function() {
         });
 
         it("can not exceed 32 degrees in normal mode", () => {
-          thermostat.powersaving = false
+          thermostat._powersaving = false
           thermostat.temperature = 32
           thermostat.up();
           expect(thermostat.temperature).toBe(32);
