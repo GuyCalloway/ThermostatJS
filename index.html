@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html align = middle>
+  <main>
+  <head>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="public/javascripts/thermostat.js"></script>
+    <script src="interface.js"></script>
+    <link rel='stylesheet' href="style.css">
+    <!-- Title is the TABS title -->
+    <title>Thermostat</title>
+    <h1 align = middle>Thermostat</h1>
+  </head>
+  <body>
+    <section align = middle>
+      <h1><span id="temperature"></span>°C</h1>
+      <p>
+          <button class = "button" id="temperature-up"><img src="UP.png" height="200" width="150"></button>
+        <button class = "button2" id="temperature-down"><img src="down.png" height="200" width="150"></button>
+        <p><button class = button3 id="temperature-reset"><img src="resetbutton.png" height="100" width="130"></button>
+        <p>POWER SAVING MODE IS: <span id="power-saving-status">ON</span>
+        <button id="powersaving-switch">PSM switch</button>
+      </p>
+    </section>
+
+    <section>
+      <h1 class="fancy"><select id="current-city">
+          <option value="london">London temperature:</option>
+          <option value="york">York temperature:</option>
+          <option value="paris">Paris temperature:</option>
+          <option value="tokyo">Tokyo temperature</option>
+        </select> 
+        <p>
+        <span id="current-temperature"></span>°C
+       
+      
+    </h1>
+    </section>
+
+   <!-- <script>
+   $(document).ready(function() { })
+  //  when load html tells browser to run Jquery code
+   </script> -->
+
+
+  </body>
+</main>
+</html>
+
+<!-- download J query into document -->

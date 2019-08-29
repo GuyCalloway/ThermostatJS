@@ -2,7 +2,7 @@
 function Thermostat () {
     //TODO try to remove magic number
     this.temperature = 20
-    this._powersaving = true
+    this._powersaving = "ON"
     this.max = 25
 }
 
@@ -16,31 +16,15 @@ Thermostat.prototype = {
     },
 
     powersaving: function() {
-        if (this._powersaving == true) {
-            this.max = 25
-            this._powersaving = false
+        if (this._powersaving == "ON") {
+            this._powersaving = "OFF"
+            this.max = 32
         } else {
-            this.max = 32;
-            this._powersaving = true
+            this._powersaving = "ON"
+            this.max = 25
         };
     },
           
-
-        //TODO refactor later
-        // if(this.powersaving == true){
-        //     if(this.temperature == 25){
-        //         return; 
-        //     }else{
-        //         this.temperature++;
-        //     }
-        // }else{
-        //     if(this.temperature == 32){
-        //         return;
-        //     }else{
-        //         this.temperature++;
-        //     }
-        // }
-
 
     down: function() { 
         if (this.temperature > 10) {
@@ -62,6 +46,17 @@ Thermostat.prototype = {
         } else {
             return 'low-usage';
     }
- }
+ },
+    temp: function() {
+        if (this.temperature > 24) {
+            return 'high-usage';
+        } else if (this.temperature > 17) {
+            return 'medium-usage';
+        } else {
+            return 'low-usage';
+    }
+}
+
 
 };
+

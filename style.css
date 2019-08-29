@@ -1,0 +1,61 @@
+.low-usage {
+    color: blue;
+  }
+  
+  .medium-usage {
+    color: black;
+  }
+  
+  .high-usage {
+    color: red;
+  }
+
+  main {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 500px;
+    width: 600px;
+    margin: 0 auto; 
+    background: yellow;
+  } 
+
+  .button {
+    padding: 10px;
+    margin: 0 auto; 
+    background: rgb(241, 111, 24);
+  } 
+
+  .button3 {
+    padding: 10px;
+    margin: 0 auto; 
+    background: rgb(194, 44, 69);
+  } 
+
+  .button2 {
+    padding: 10px;
+    margin: 0 auto; 
+    background: rgb(31, 184, 245);
+  } 
+
+  
+
+  .simple {
+    width: 500px;
+    margin: 20px auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
